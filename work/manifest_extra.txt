@@ -1,0 +1,36 @@
+TC-EP-126|s2_197|ACCEPTED | Valid name accepted (field shows 'Muhammad Bilal Tahir')
+TC-EP-127|s2_185|RAN | Empty Name was NOT rejected: submit succeeded and the form cleared (Name is optional; no error shown)
+TC-EP-128|s2_191,s2_192|REJECTED (input limited) | Typing a 121st character is ignored; Name stays at 120 chars
+TC-EP-129|s2_197|ACCEPTED | Valid email accepted
+TC-EP-130|s2_198|RAN | Empty Email was NOT rejected: submit succeeded and the form cleared (no error shown)
+TC-EP-132|s2_197|ACCEPTED | Valid subject accepted (27/120 counter)
+TC-EP-133|s2_181|REJECTED (toast) | toast: Subject is required.
+TC-EP-134|s2_193,s2_194|REJECTED (input limited) | Typing beyond 120 chars is ignored; counter stays 120 / 120
+TC-EP-135|s2_197|ACCEPTED | Valid message accepted (52/5000 counter)
+TC-EP-136|s2_182|REJECTED (toast) | toast: Message must be at least 10 characters.
+TC-EP-137|s2_195,s2_196|REJECTED (input limited) | Typing beyond 5000 chars is ignored; message stays 5000 chars
+TC-BVA-087|s2_191|ACCEPTED | 120-char name accepted
+TC-BVA-088|s2_192|REJECTED (input limited) | 121st character ignored; Name stays 120
+TC-BVA-089|s2_193|ACCEPTED | 120-char subject accepted (counter 120 / 120)
+TC-BVA-090|s2_194|REJECTED (input limited) | 121st character ignored; Subject stays 120
+TC-BVA-091|s2_195|ACCEPTED | 5000-char message accepted
+TC-BVA-092|s2_196|REJECTED (input limited) | 5001st character ignored; Message stays 5000
+TC-EP-010|s2_201|ACCEPTED | Registered email accepted in the Sign in dialog
+TC-EP-011|s2_199|REJECTED (no submission) | Empty email and password: Sign in click does nothing, no request is made
+TC-EP-012|s2_200|REJECTED (native browser validation) | Please include an '@' in the email address. 'notanemail' is missing an '@'.
+TC-EP-014|s2_201,s2_202|RAN | Correct password: signed in, 'Finish setup' dialog appears and the account shows Free plan
+TC-EP-002|s2_203|REJECTED (no submission) | Empty email: Confirm my email click does nothing; no message, no account request
+TC-EP-003|s2_204|REJECTED (native browser validation) | Please include an '@' in the email address. 'notanemail' is missing an '@'.
+TC-EP-004|s2_205|ACCEPTED | 'a@b' passes the browser email check (no domain suffix needed); submit then stops silently because the password is empty
+TC-EP-007|s2_206|REJECTED (no submission) | Valid email with empty password: Confirm my email click does nothing; no message shown
+TC-EP-008|s2_207,s2_208|REJECTED (no submission) | 5-character password with matching confirmation: Confirm my email click does nothing and no message explains why
+TC-EP-015|s2_209|REJECTED (no submission) | Registered email with empty password: Sign in click does nothing, no message shown
+TC-EP-131|s2_210,s2_211|RAN | Malformed email 'notanemail' was NOT rejected: toast 'Message sent. We will get back to you soon.' and the form cleared
+TC-EP-013|s2_212,s2_213|REJECTED (toast) | toast: Email or password wasn't recognized. Try again, use a one-time code, or create/reset your password. (generic message, does not reveal whether the email exists)
+TC-EP-016|s2_214,s2_215|REJECTED (toast) | toast: Email or password wasn't recognized. Try again, use a one-time code, or create/reset your password.
+TC-EP-005|s2_216,s2_217|RAN | Already-registered email was not rejected: toast 'Code sent' and the dialog moved to 'Enter the verification code sent to ... to create your account' (no 'account exists' message; consistent with anti-enumeration design)
+TC-EP-009|s2_218,s2_219|RAN | 73-character password was NOT rejected or truncated: 'Code sent' toast and the verification-code step appeared (no maximum length enforced at this step)
+TC-EP-001|s2_218,s2_219|ACCEPTED | Valid unregistered email newuser@example.com accepted: toast 'Code sent' and the verification step 'Enter the verification code sent to newuser@example.com' appears (account is only created after the code is verified, which was not done)
+TC-EP-006|s2_216,s2_217|ACCEPTED | Password of valid length (Test@1234, 9 chars) accepted: 'Code sent' toast and verification step shown
+TC-BVA-001|s2_221|REJECTED (button disabled) | 7-character password (abcdefg) in both fields: the 'Confirm my email' button stays disabled; no message. (6 chars, shot s2_220, is also disabled)
+TC-BVA-002|s2_222|ACCEPTED | 8-character password (abcdefgh): 'Confirm my email' button becomes enabled (the form was not submitted)

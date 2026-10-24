@@ -1,0 +1,5730 @@
+[
+ {
+  "id": "TC-EP-001",
+  "ec": "EC-001",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Email",
+  "desc": "Valid, unregistered email address format",
+  "rep": "newuser@example.com",
+  "typ": "VEC",
+  "exp": "Account created / verification step shown",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-002",
+  "ec": "EC-002",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Email",
+  "desc": "Empty email",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; email required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-003",
+  "ec": "EC-003",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Email",
+  "desc": "Email without @ symbol",
+  "rep": "notanemail",
+  "typ": "IEC",
+  "exp": "Rejected; invalid email format",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-004",
+  "ec": "EC-004",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Email",
+  "desc": "Email without domain suffix",
+  "rep": "a@b",
+  "typ": "IEC",
+  "exp": "Rejected; invalid email format",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-005",
+  "ec": "EC-005",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Email",
+  "desc": "Email already registered",
+  "rep": "(your registered email)",
+  "typ": "IEC",
+  "exp": "Rejected; account exists",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-006",
+  "ec": "EC-006",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Password of valid length",
+  "rep": "Test@1234",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-007",
+  "ec": "EC-007",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Empty password",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; password required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-008",
+  "ec": "EC-008",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Password shorter than minimum length",
+  "rep": "abcde",
+  "typ": "IEC",
+  "exp": "Rejected; too short",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-009",
+  "ec": "EC-009",
+  "kind": "EP",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Password longer than maximum length",
+  "rep": "73 x a",
+  "typ": "IEC",
+  "exp": "Rejected or truncated; too long",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-010",
+  "ec": "EC-010",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Email",
+  "desc": "Registered email",
+  "rep": "(your registered email)",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-011",
+  "ec": "EC-011",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Email",
+  "desc": "Empty email",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; email required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-012",
+  "ec": "EC-012",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Email",
+  "desc": "Malformed email",
+  "rep": "notanemail",
+  "typ": "IEC",
+  "exp": "Rejected; invalid email format",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-013",
+  "ec": "EC-013",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Email",
+  "desc": "Unregistered email",
+  "rep": "nobody@x.com",
+  "typ": "IEC",
+  "exp": "Rejected; invalid credentials",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-014",
+  "ec": "EC-014",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Password",
+  "desc": "Correct password for the account",
+  "rep": "(correct password)",
+  "typ": "VEC",
+  "exp": "Signed in",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-015",
+  "ec": "EC-015",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Password",
+  "desc": "Empty password",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; password required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-016",
+  "ec": "EC-016",
+  "kind": "EP",
+  "form": "SI",
+  "field": "Password",
+  "desc": "Wrong password",
+  "rep": "wrongpass1234",
+  "typ": "IEC",
+  "exp": "Rejected; invalid credentials",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-017",
+  "ec": "EC-017",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Valid start date inside data range, before end date",
+  "rep": "2020-01-01 (end 2021-01-01)",
+  "typ": "VEC",
+  "exp": "Backtest runs for the entered period",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2021-01-01"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-018",
+  "ec": "EC-018",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Start date left empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Backtest runs from earliest common date",
+  "sets": [],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-019",
+  "ec": "EC-019",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 (end 2019-01-01)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-020",
+  "ec": "EC-020",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Start date equal to end date",
+  "rep": "2020-01-01 (end 2020-01-01)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-021",
+  "ec": "EC-021",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Start date earlier than first available data",
+  "rep": "1990-01-01 (end 2020-01-01)",
+  "typ": "IEC",
+  "exp": "Rejected, or user told the start is adjusted",
+  "sets": [
+   [
+    "#2",
+    "1990-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-01"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-022",
+  "ec": "EC-022",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Start Date",
+  "desc": "Start date in the far future (no data)",
+  "rep": "2099-01-01 (end 2100-01-01)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2099-01-01"
+   ],
+   [
+    "#3",
+    "2100-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-023",
+  "ec": "EC-023",
+  "kind": "EP",
+  "form": "BT",
+  "field": "End Date",
+  "desc": "Valid end date with start empty",
+  "rep": "2020-01-01 (start empty)",
+  "typ": "VEC",
+  "exp": "Backtest runs up to the entered date",
+  "sets": [
+   [
+    "#3",
+    "2020-01-01"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-024",
+  "ec": "EC-024",
+  "kind": "EP",
+  "form": "BT",
+  "field": "End Date",
+  "desc": "Start only, end date empty (runs to latest data)",
+  "rep": "2020-01-01 (end empty)",
+  "typ": "VEC",
+  "exp": "Backtest runs to latest data",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-025",
+  "ec": "EC-025",
+  "kind": "EP",
+  "form": "BT",
+  "field": "End Date",
+  "desc": "End date later than last available data",
+  "rep": "2020-01-01 to 2030-01-01",
+  "typ": "IEC",
+  "exp": "Rejected, or user told the end is adjusted",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2030-01-01"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-026",
+  "ec": "EC-026",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Valid starting value (>=1, below upper limit)",
+  "rep": "10000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#4",
+    "10000"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-027",
+  "ec": "EC-027",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Zero starting value",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-028",
+  "ec": "EC-028",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Negative starting value",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-029",
+  "ec": "EC-029",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Fractional value below minimum",
+  "rep": "0.5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "0.5"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-030",
+  "ec": "EC-030",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Empty starting value",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    ""
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-031",
+  "ec": "EC-031",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Starting value above the upper limit",
+  "rep": "5000000000000",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "5000000000000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-032",
+  "ec": "EC-032",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Valid rolling window in months",
+  "rep": "60",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#6",
+    "60"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-033",
+  "ec": "EC-033",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Zero rolling window",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-034",
+  "ec": "EC-034",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Negative rolling window",
+  "rep": "-1",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-035",
+  "ec": "EC-035",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Non-integer rolling window",
+  "rep": "1.5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "1.5"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-036",
+  "ec": "EC-036",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Rolling window above upper limit",
+  "rep": "20000",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "20000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-037",
+  "ec": "EC-037",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Valid growth percentage",
+  "rep": "2",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#10",
+    "2"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-038",
+  "ec": "EC-038",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Growth below minimum",
+  "rep": "-100",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "-100"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-039",
+  "ec": "EC-039",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Growth above maximum",
+  "rep": "101",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-040",
+  "ec": "EC-040",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Cashflow amount",
+  "desc": "Positive cashflow (contribution)",
+  "rep": "1000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#12",
+    "1000"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-041",
+  "ec": "EC-041",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Cashflow amount",
+  "desc": "Negative cashflow (withdrawal)",
+  "rep": "-500",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#12",
+    "-500"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-042",
+  "ec": "EC-042",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Cashflow amount",
+  "desc": "Zero cashflow (no cashflow)",
+  "rep": "0",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#12",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-043",
+  "ec": "EC-043",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Valid drag between 0 and 100",
+  "rep": "0.5",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#19",
+    "0.5"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-044",
+  "ec": "EC-044",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Negative drag",
+  "rep": "-1",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#19",
+    "-1"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-045",
+  "ec": "EC-045",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Drag above 100%",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#19",
+    "150"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-046",
+  "ec": "EC-046",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Valid ticker (upper case)",
+  "rep": "SPY",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#22",
+    "SPY"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-047",
+  "ec": "EC-047",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Valid ticker in lower case",
+  "rep": "spy",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#22",
+    "spy"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-048",
+  "ec": "EC-048",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Unknown ticker",
+  "rep": "ZZZZZZ",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "ZZZZZZ"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-049",
+  "ec": "EC-049",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Empty ticker with non-zero allocation",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    ""
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-050",
+  "ec": "EC-050",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "SQL fragment as ticker",
+  "rep": "' OR 1=1 --",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "' OR 1=1 --"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-051",
+  "ec": "EC-051",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Non-ASCII (unicode) ticker",
+  "rep": "ÄÖÜ",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "ÄÖÜ"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-052",
+  "ec": "EC-052",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Ticker containing a space",
+  "rep": "S PY",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "S PY"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-053",
+  "ec": "EC-053",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Ticker",
+  "desc": "Very long ticker (50 characters)",
+  "rep": "ABCDEFGHIJ x5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-054",
+  "ec": "EC-054",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum to exactly 100 across 2 assets",
+  "rep": "SPY 60 / AGG 40",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-055",
+  "ec": "EC-055",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Single asset at 100%",
+  "rep": "SPY 100 / AGG 0",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#23",
+    "100"
+   ],
+   [
+    "#25",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-056",
+  "ec": "EC-056",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum below 100",
+  "rep": "SPY 60 / AGG 30 (90)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#25",
+    "30"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-057",
+  "ec": "EC-057",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum above 100",
+  "rep": "SPY 60 / AGG 60 (120)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#25",
+    "60"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-058",
+  "ec": "EC-058",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Negative allocation with offsetting excess",
+  "rep": "SPY -10 / AGG 110",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#23",
+    "-10"
+   ],
+   [
+    "#25",
+    "110"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-059",
+  "ec": "EC-059",
+  "kind": "EP",
+  "form": "BT",
+  "field": "Rebalance frequency",
+  "desc": "Valid rebalance option (Yearly, default)",
+  "rep": "Yearly",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-060",
+  "ec": "EC-060",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Start / End Date",
+  "desc": "Dates empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Simulation runs",
+  "sets": [],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-061",
+  "ec": "EC-061",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Start / End Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 / 2019-01-01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Start Date",
+    "2020-01-01"
+   ],
+   [
+    "End Date",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-062",
+  "ec": "EC-062",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Valid horizon within free limit",
+  "rep": "10",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Number of years",
+    "10"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-063",
+  "ec": "EC-063",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Horizon below minimum",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Number of years",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-064",
+  "ec": "EC-064",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Horizon above free-plan limit but within 100",
+  "rep": "50",
+  "typ": "IEC",
+  "exp": "Rejected or plan-limit message",
+  "sets": [
+   [
+    "Number of years",
+    "50"
+   ]
+  ],
+  "mode": "gate",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-065",
+  "ec": "EC-065",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Horizon above absolute maximum",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Number of years",
+    "150"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-066",
+  "ec": "EC-066",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Decimal horizon",
+  "rep": "2.5",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Number of years",
+    "2.5"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-067",
+  "ec": "EC-067",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Starting Value",
+  "desc": "Valid starting value",
+  "rep": "10000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Starting Value",
+    "10000"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-068",
+  "ec": "EC-068",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Starting Value",
+  "desc": "Zero starting value",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-069",
+  "ec": "EC-069",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Min block (years)",
+  "desc": "Valid minimum block length",
+  "rep": "1",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Min block",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-070",
+  "ec": "EC-070",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Min block (years)",
+  "desc": "Minimum block below allowed minimum",
+  "rep": "0.01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Min block",
+    "0.01"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-071",
+  "ec": "EC-071",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Max block (years)",
+  "desc": "Valid maximum block length",
+  "rep": "5",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Max block",
+    "5"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-072",
+  "ec": "EC-072",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Max block (years)",
+  "desc": "Maximum block above allowed maximum",
+  "rep": "25",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Max block",
+    "25"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-073",
+  "ec": "EC-073",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Max block (years)",
+  "desc": "Maximum block below allowed minimum",
+  "rep": "0.01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Max block",
+    "0.01"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-074",
+  "ec": "EC-074",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Seed left empty (random)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-075",
+  "ec": "EC-075",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Valid whole-number seed",
+  "rep": "42",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Random seed",
+    "42"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-076",
+  "ec": "EC-076",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Negative seed",
+  "rep": "-1",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Random seed",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-077",
+  "ec": "EC-077",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Non-integer seed",
+  "rep": "1.5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Random seed",
+    "1.5"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-078",
+  "ec": "EC-078",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum to 100 (50/25/25)",
+  "rep": "50/25/25",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-079",
+  "ec": "EC-079",
+  "kind": "EP",
+  "form": "MC",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum below 100",
+  "rep": "50/25/20 (95)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "20"
+   ]
+  ],
+  "mode": "toast",
+  "key": "mc"
+ },
+ {
+  "id": "TC-EP-080",
+  "ec": "EC-080",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Valid horizon",
+  "rep": "30",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#6",
+    "30"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-081",
+  "ec": "EC-081",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Zero horizon",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "0"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-082",
+  "ec": "EC-082",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Horizon above maximum",
+  "rep": "60",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "60"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-083",
+  "ec": "EC-083",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "Valid end year before horizon",
+  "rep": "10",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#7",
+    "10"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-084",
+  "ec": "EC-084",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "End year zero",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#7",
+    "0"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-085",
+  "ec": "EC-085",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "End year after the horizon",
+  "rep": "40 (horizon 30)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#7",
+    "40"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-086",
+  "ec": "EC-086",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Valid withdrawal rate",
+  "rep": "4",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#8",
+    "4"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-087",
+  "ec": "EC-087",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Withdrawal rate negative",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#8",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-088",
+  "ec": "EC-088",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Withdrawal rate above 100",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#8",
+    "150"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-089",
+  "ec": "EC-089",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Valid withdrawal rate",
+  "rep": "6",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#10",
+    "6"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-090",
+  "ec": "EC-090",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Withdrawal rate negative",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-091",
+  "ec": "EC-091",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Withdrawal rate above 100",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "150"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-092",
+  "ec": "EC-092",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Start / End Date",
+  "desc": "Dates empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-093",
+  "ec": "EC-093",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Start / End Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 / 2019-01-01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Start Date",
+    "2020-01-01"
+   ],
+   [
+    "End Date",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-094",
+  "ec": "EC-094",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum to 100 (50/30/20)",
+  "rep": "50/30/20",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [],
+  "mode": "run",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-095",
+  "ec": "EC-095",
+  "kind": "EP",
+  "form": "SW",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum below 100",
+  "rep": "50/30/10 (90)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#22",
+    "10"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw"
+ },
+ {
+  "id": "TC-EP-096",
+  "ec": "EC-096",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Three valid tickers separated by spaces",
+  "rep": "SPY AGG GLD",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-097",
+  "ec": "EC-097",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Exactly two valid tickers",
+  "rep": "SPY AGG",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-098",
+  "ec": "EC-098",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Only one ticker",
+  "rep": "SPY",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY"
+   ]
+  ],
+  "mode": "toast",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-099",
+  "ec": "EC-099",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Empty tickers",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    ""
+   ]
+  ],
+  "mode": "toast",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-100",
+  "ec": "EC-100",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Contains an unknown ticker",
+  "rep": "SPY ZZZZZZ",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY ZZZZZZ"
+   ]
+  ],
+  "mode": "toast",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-101",
+  "ec": "EC-101",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Comma-separated tickers",
+  "rep": "SPY,AGG,GLD",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY,AGG,GLD"
+   ]
+  ],
+  "mode": "toast",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-102",
+  "ec": "EC-102",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Start / End Date",
+  "desc": "Dates empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-103",
+  "ec": "EC-103",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Start / End Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 / 2019-01-01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Start Date",
+    "2020-01-01"
+   ],
+   [
+    "End Date",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-104",
+  "ec": "EC-104",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Starting Value",
+  "desc": "Valid starting value",
+  "rep": "10000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Starting Value",
+    "10000"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-105",
+  "ec": "EC-105",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Starting Value",
+  "desc": "Zero starting value",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Starting Value",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-106",
+  "ec": "EC-106",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Rolling Window",
+  "desc": "Valid rolling window",
+  "rep": "60",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Rolling Window",
+    "60"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-107",
+  "ec": "EC-107",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Rolling Window",
+  "desc": "Zero rolling window",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Rolling Window",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-108",
+  "ec": "EC-108",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Max holdings",
+  "desc": "Valid max holdings",
+  "rep": "2",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max holdings",
+    "2"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-109",
+  "ec": "EC-109",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Max holdings",
+  "desc": "Zero max holdings",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max holdings",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-110",
+  "ec": "EC-110",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Valid minimum weight",
+  "rep": "10",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "10"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-111",
+  "ec": "EC-111",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Negative minimum weight",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-112",
+  "ec": "EC-112",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum weight above 100",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "150"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-113",
+  "ec": "EC-113",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Max vol (%)",
+  "desc": "Valid maximum volatility",
+  "rep": "20",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max vol",
+    "20"
+   ]
+  ],
+  "mode": "run",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-114",
+  "ec": "EC-114",
+  "kind": "EP",
+  "form": "OP",
+  "field": "Max vol (%)",
+  "desc": "Negative maximum volatility",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max vol",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "op"
+ },
+ {
+  "id": "TC-EP-115",
+  "ec": "EC-115",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Two valid tickers",
+  "rep": "SPY AGG",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-116",
+  "ec": "EC-116",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Only one ticker",
+  "rep": "SPY",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY"
+   ]
+  ],
+  "mode": "toast",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-117",
+  "ec": "EC-117",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Empty tickers",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    ""
+   ]
+  ],
+  "mode": "toast",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-118",
+  "ec": "EC-118",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Three tickers (above free-plan limit)",
+  "rep": "SPY AGG GLD",
+  "typ": "IEC",
+  "exp": "Rejected or plan-limit message",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-119",
+  "ec": "EC-119",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Start / End Date",
+  "desc": "Dates empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-120",
+  "ec": "EC-120",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Start / End Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 / 2019-01-01",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Start Date",
+    "2020-01-01"
+   ],
+   [
+    "End Date",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-121",
+  "ec": "EC-121",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Max holdings",
+  "desc": "Valid max holdings",
+  "rep": "2",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Max holdings",
+    "2"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-122",
+  "ec": "EC-122",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Max holdings",
+  "desc": "Zero max holdings",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Max holdings",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-123",
+  "ec": "EC-123",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Valid minimum weight",
+  "rep": "10",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "10"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-124",
+  "ec": "EC-124",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Negative minimum weight",
+  "rep": "-5",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "-5"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-125",
+  "ec": "EC-125",
+  "kind": "EP",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum weight above 100",
+  "rep": "150",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "150"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef"
+ },
+ {
+  "id": "TC-EP-126",
+  "ec": "EC-126",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Name",
+  "desc": "Valid name (1-120 chars)",
+  "rep": "Muhammad Bilal Tahir",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-127",
+  "ec": "EC-127",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Name",
+  "desc": "Empty name",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; name required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-128",
+  "ec": "EC-128",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Name",
+  "desc": "Name longer than 120 characters",
+  "rep": "121 x a",
+  "typ": "IEC",
+  "exp": "Input limited/rejected at 120",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-129",
+  "ec": "EC-129",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Email",
+  "desc": "Valid email format",
+  "rep": "student@example.com",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-130",
+  "ec": "EC-130",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Email",
+  "desc": "Empty email",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; email required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-131",
+  "ec": "EC-131",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Email",
+  "desc": "Malformed email",
+  "rep": "notanemail",
+  "typ": "IEC",
+  "exp": "Rejected; invalid format",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-132",
+  "ec": "EC-132",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Subject",
+  "desc": "Valid subject (1-120 chars)",
+  "rep": "Question about backtests",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-133",
+  "ec": "EC-133",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Subject",
+  "desc": "Empty subject",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; subject required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-134",
+  "ec": "EC-134",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Subject",
+  "desc": "Subject longer than 120 characters",
+  "rep": "121 x a",
+  "typ": "IEC",
+  "exp": "Input limited/rejected at 120",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-135",
+  "ec": "EC-135",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Message",
+  "desc": "Valid message (1-5000 chars)",
+  "rep": "Hello, test message",
+  "typ": "VEC",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-136",
+  "ec": "EC-136",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Message",
+  "desc": "Empty message",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected; message required",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-137",
+  "ec": "EC-137",
+  "kind": "EP",
+  "form": "CT",
+  "field": "Message",
+  "desc": "Message longer than 5000 characters",
+  "rep": "5001 x a",
+  "typ": "IEC",
+  "exp": "Input limited/rejected at 5000",
+  "sets": [],
+  "mode": "pending",
+  "key": null
+ },
+ {
+  "id": "TC-EP-138",
+  "ec": "EC-138",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Starting Value",
+  "desc": "Valid starting value (>=100)",
+  "rep": "10000",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "Starting Value",
+    "10000"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-139",
+  "ec": "EC-139",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Starting Value",
+  "desc": "Starting value below minimum",
+  "rep": "50",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "Starting Value",
+    "50"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-140",
+  "ec": "EC-140",
+  "kind": "EP",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Valid horizon",
+  "rep": "12",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "12"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-141",
+  "ec": "EC-141",
+  "kind": "EP",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Horizon below minimum",
+  "rep": "0",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-142",
+  "ec": "EC-142",
+  "kind": "EP",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Horizon above maximum",
+  "rep": "200",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "200"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-143",
+  "ec": "EC-143",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Ticker",
+  "desc": "Valid ticker",
+  "rep": "SPY",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-144",
+  "ec": "EC-144",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Ticker",
+  "desc": "Unknown ticker",
+  "rep": "ZZZZZZ",
+  "typ": "IEC",
+  "exp": "Validation message shown",
+  "sets": [
+   [
+    "#15",
+    "ZZZZZZ"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-145",
+  "ec": "EC-145",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum to 100",
+  "rep": "60/40",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-146",
+  "ec": "EC-146",
+  "kind": "EP",
+  "form": "LD",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum below 100",
+  "rep": "60/30 (90)",
+  "typ": "IEC",
+  "exp": "Validation message shown",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "30"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld"
+ },
+ {
+  "id": "TC-EP-147",
+  "ec": "EC-147",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Valid starting value",
+  "rep": "10000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Starting Value",
+    "10000"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-148",
+  "ec": "EC-148",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Negative starting value",
+  "rep": "-500",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "-500"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-149",
+  "ec": "EC-149",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Starting value above maximum",
+  "rep": "9000000",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "9000000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-150",
+  "ec": "EC-150",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Empty starting value",
+  "rep": "(empty)",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    ""
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-151",
+  "ec": "EC-151",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Valid monthly contribution",
+  "rep": "1000",
+  "typ": "VEC",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "Monthly contribution",
+    "1000"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-152",
+  "ec": "EC-152",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Negative contribution",
+  "rep": "-50",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Monthly contribution",
+    "-50"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-153",
+  "ec": "EC-153",
+  "kind": "EP",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Contribution above maximum",
+  "rep": "500000",
+  "typ": "IEC",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Monthly contribution",
+    "500000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv"
+ },
+ {
+  "id": "TC-EP-154",
+  "ec": "EC-154",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Start / End Date",
+  "desc": "Dates empty (full history)",
+  "rep": "(empty)",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "40"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-155",
+  "ec": "EC-155",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Start / End Date",
+  "desc": "Start date after end date",
+  "rep": "2020-01-01 / 2019-01-01",
+  "typ": "IEC",
+  "exp": "Validation message shown",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "40"
+   ],
+   [
+    "Start Date",
+    "2020-01-01"
+   ],
+   [
+    "End Date",
+    "2019-01-01"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-156",
+  "ec": "EC-156",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Drag (annual fee %)",
+  "desc": "Valid drag",
+  "rep": "0.5",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "40"
+   ],
+   [
+    "#11",
+    "0.5"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-157",
+  "ec": "EC-157",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Drag (annual fee %)",
+  "desc": "Negative drag",
+  "rep": "-2",
+  "typ": "IEC",
+  "exp": "Validation message shown",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "40"
+   ],
+   [
+    "#11",
+    "-2"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-158",
+  "ec": "EC-158",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum to 100",
+  "rep": "60/40",
+  "typ": "VEC",
+  "exp": "Input accepted by validation (no validation error); analysis would run",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "40"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-159",
+  "ec": "EC-159",
+  "kind": "EP",
+  "form": "RB",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Allocations sum below 100",
+  "rep": "60/30 (90)",
+  "typ": "IEC",
+  "exp": "Validation message shown",
+  "sets": [
+   [
+    "#13",
+    "SPY"
+   ],
+   [
+    "#14",
+    "60"
+   ],
+   [
+    "#15",
+    "AGG"
+   ],
+   [
+    "#16",
+    "30"
+   ]
+  ],
+  "mode": "gate",
+  "key": "rb"
+ },
+ {
+  "id": "TC-EP-S1",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 1: every field in a valid class simultaneously",
+  "rep": "Start 2015-01-01, End 2020-01-01, SV 50000, RW 36, growth 2, cashflow 100, drag 0.5, SPY60/AGG40",
+  "typ": "VEC/IEC mix",
+  "exp": "Accepted; calculation/analysis completes and results are shown",
+  "sets": [
+   [
+    "#2",
+    "2015-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-01"
+   ],
+   [
+    "#4",
+    "50000"
+   ],
+   [
+    "#6",
+    "36"
+   ],
+   [
+    "#10",
+    "2"
+   ],
+   [
+    "#12",
+    "100"
+   ],
+   [
+    "#19",
+    "0.5"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-S2",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 2: three numeric fields invalid simultaneously",
+  "rep": "SV 0, RW 0, growth -100",
+  "typ": "VEC/IEC mix",
+  "exp": "All three invalid fields are flagged; no run",
+  "sets": [
+   [
+    "#4",
+    "0"
+   ],
+   [
+    "#6",
+    "0"
+   ],
+   [
+    "#10",
+    "-100"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-S3",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 3: valid numerics + unknown ticker + allocation sum 90",
+  "rep": "ticker ZZZZZZ, alloc 60/30",
+  "typ": "VEC/IEC mix",
+  "exp": "Both problems are reported; no run",
+  "sets": [
+   [
+    "#22",
+    "ZZZZZZ"
+   ],
+   [
+    "#25",
+    "30"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-S4",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 4: invalid date order + empty starting value + unknown ticker + alloc sum 120",
+  "rep": "2020-01-01/2019-01-01, SV empty, ZZZZZZ, 60/60",
+  "typ": "VEC/IEC mix",
+  "exp": "All problems are reported; no run",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2019-01-01"
+   ],
+   [
+    "#4",
+    ""
+   ],
+   [
+    "#22",
+    "ZZZZZZ"
+   ],
+   [
+    "#25",
+    "60"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-S5",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 5: valid dates + valid numerics + negative allocation (invalid)",
+  "rep": "2015-01-01/2020-01-01, SV 50000, alloc -10/110",
+  "typ": "VEC/IEC mix",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2015-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-01"
+   ],
+   [
+    "#4",
+    "50000"
+   ],
+   [
+    "#23",
+    "-10"
+   ],
+   [
+    "#25",
+    "110"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt"
+ },
+ {
+  "id": "TC-EP-S6",
+  "ec": "multiple",
+  "kind": "EPS",
+  "form": "BT",
+  "field": "multiple fields",
+  "desc": "Strong EP 6: empty ticker + drag above 100",
+  "rep": "ticker empty, drag 150",
+  "typ": "VEC/IEC mix",
+  "exp": "Both problems are reported; no run",
+  "sets": [
+   [
+    "#22",
+    ""
+   ],
+   [
+    "#19",
+    "150"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt"
+ },
+ {
+  "id": "TC-BVA-001",
+  "bc": "BC-001",
+  "kind": "BVA",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Minimum password length",
+  "rep": "7 chars",
+  "pos": "Below",
+  "exp": "Rejected; too short",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "8 characters",
+  "ecref": "Password shorter than minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-002",
+  "bc": "BC-001",
+  "kind": "BVA",
+  "form": "SU",
+  "field": "Password",
+  "desc": "Minimum password length",
+  "rep": "8 chars",
+  "pos": "At",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "8 characters",
+  "ecref": "Password shorter than minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-003",
+  "bc": "BC-002",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "0.99",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "0.99"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero/fractional starting value (IEC) vs valid starting value (VEC)"
+ },
+ {
+  "id": "TC-BVA-004",
+  "bc": "BC-002",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#4",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero/fractional starting value (IEC) vs valid starting value (VEC)"
+ },
+ {
+  "id": "TC-BVA-005",
+  "bc": "BC-002",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "2",
+  "pos": "Above",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#4",
+    "2"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero/fractional starting value (IEC) vs valid starting value (VEC)"
+ },
+ {
+  "id": "TC-BVA-006",
+  "bc": "BC-003",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Maximum starting value (largest accepted)",
+  "rep": "999,999,999,998",
+  "pos": "Below",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#4",
+    "999999999998"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "999,999,999,999",
+  "ecref": "Starting value above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-007",
+  "bc": "BC-003",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Maximum starting value (largest accepted)",
+  "rep": "999,999,999,999",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#4",
+    "999999999999"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "999,999,999,999",
+  "ecref": "Starting value above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-008",
+  "bc": "BC-003",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Starting Value",
+  "desc": "Maximum starting value (largest accepted)",
+  "rep": "1,000,000,000,000",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#4",
+    "1000000000000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "999,999,999,999",
+  "ecref": "Starting value above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-009",
+  "bc": "BC-004",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Minimum rolling window (months)",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero rolling window (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-010",
+  "bc": "BC-004",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Minimum rolling window (months)",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero rolling window (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-011",
+  "bc": "BC-004",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Minimum rolling window (months)",
+  "rep": "2",
+  "pos": "Above",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "2"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "1",
+  "ecref": "Zero rolling window (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-012",
+  "bc": "BC-005",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Maximum rolling window (largest accepted)",
+  "rep": "11998",
+  "pos": "Below",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "11998"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "11999",
+  "ecref": "Rolling window above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-013",
+  "bc": "BC-005",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Maximum rolling window (largest accepted)",
+  "rep": "11999",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "11999"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "11999",
+  "ecref": "Rolling window above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-014",
+  "bc": "BC-005",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Rolling Window",
+  "desc": "Maximum rolling window (largest accepted)",
+  "rep": "12000",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "12000"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "11999",
+  "ecref": "Rolling window above the upper limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-015",
+  "bc": "BC-006",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Minimum annual cashflow growth (%)",
+  "rep": "-100",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "-100"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt",
+  "bval": "-99.99",
+  "ecref": "Growth below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-016",
+  "bc": "BC-006",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Minimum annual cashflow growth (%)",
+  "rep": "-99.99",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "-99.99"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "-99.99",
+  "ecref": "Growth below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-017",
+  "bc": "BC-006",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Minimum annual cashflow growth (%)",
+  "rep": "-99.98",
+  "pos": "Above",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "-99.98"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "-99.99",
+  "ecref": "Growth below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-018",
+  "bc": "BC-007",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Maximum annual cashflow growth (%)",
+  "rep": "99.99",
+  "pos": "Below",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "99.99"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Growth above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-019",
+  "bc": "BC-007",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Maximum annual cashflow growth (%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Growth above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-020",
+  "bc": "BC-007",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Annual cashflow growth",
+  "desc": "Maximum annual cashflow growth (%)",
+  "rep": "100.01",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "100.01"
+   ]
+  ],
+  "mode": "native",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Growth above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-021",
+  "bc": "BC-008",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Required allocation total (%)",
+  "rep": "99.99 (60/39.99)",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#25",
+    "39.99"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Allocations sum below/above 100 (IEC) vs sum = 100 (VEC)"
+ },
+ {
+  "id": "TC-BVA-022",
+  "bc": "BC-008",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Required allocation total (%)",
+  "rep": "100 (60/40)",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [],
+  "mode": "run",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Allocations sum below/above 100 (IEC) vs sum = 100 (VEC)"
+ },
+ {
+  "id": "TC-BVA-023",
+  "bc": "BC-008",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Allocation % (portfolio total)",
+  "desc": "Required allocation total (%)",
+  "rep": "100.01 (60/40.01)",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#25",
+    "40.01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Allocations sum below/above 100 (IEC) vs sum = 100 (VEC)"
+ },
+ {
+  "id": "TC-BVA-024",
+  "bc": "BC-009",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Start Date / End Date",
+  "desc": "Start date must be strictly before end date (end relative to start 2020-01-01)",
+  "rep": "end 2019-12-31",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2019-12-31"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "end = start + 1 day",
+  "ecref": "Start after end date (IEC) / start equal end (IEC) vs start before end (VEC)"
+ },
+ {
+  "id": "TC-BVA-025",
+  "bc": "BC-009",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Start Date / End Date",
+  "desc": "Start date must be strictly before end date (end relative to start 2020-01-01)",
+  "rep": "end 2020-01-01",
+  "pos": "At",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-01"
+   ]
+  ],
+  "mode": "toast",
+  "key": "bt",
+  "bval": "end = start + 1 day",
+  "ecref": "Start after end date (IEC) / start equal end (IEC) vs start before end (VEC)"
+ },
+ {
+  "id": "TC-BVA-026",
+  "bc": "BC-009",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Start Date / End Date",
+  "desc": "Start date must be strictly before end date (end relative to start 2020-01-01)",
+  "rep": "end 2020-01-02",
+  "pos": "Above",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#2",
+    "2020-01-01"
+   ],
+   [
+    "#3",
+    "2020-01-02"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "end = start + 1 day",
+  "ecref": "Start after end date (IEC) / start equal end (IEC) vs start before end (VEC)"
+ },
+ {
+  "id": "TC-BVA-027",
+  "bc": "BC-010",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Lower limit of drag (expected 0%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#19",
+    "-1"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt",
+  "bval": "0",
+  "ecref": "Negative drag (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-028",
+  "bc": "BC-010",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Lower limit of drag (expected 0%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#19",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "0",
+  "ecref": "Negative drag (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-029",
+  "bc": "BC-010",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Lower limit of drag (expected 0%)",
+  "rep": "1",
+  "pos": "Above",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#19",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "0",
+  "ecref": "Negative drag (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-030",
+  "bc": "BC-011",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Upper limit of drag (expected 100%)",
+  "rep": "99",
+  "pos": "Below",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#19",
+    "99"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Drag above 100% (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-031",
+  "bc": "BC-011",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Upper limit of drag (expected 100%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#19",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Drag above 100% (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-032",
+  "bc": "BC-011",
+  "kind": "BVA",
+  "form": "BT",
+  "field": "Drag (annual fee %)",
+  "desc": "Upper limit of drag (expected 100%)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#19",
+    "101"
+   ]
+  ],
+  "mode": "run_bad",
+  "key": "bt",
+  "bval": "100",
+  "ecref": "Drag above 100% (IEC) vs valid drag (VEC)"
+ },
+ {
+  "id": "TC-BVA-033",
+  "bc": "BC-012",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Minimum horizon (years)",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Number of years",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "1",
+  "ecref": "Horizon below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-034",
+  "bc": "BC-012",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Minimum horizon (years)",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Number of years",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "1",
+  "ecref": "Horizon below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-035",
+  "bc": "BC-013",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Free-plan maximum horizon (years)",
+  "rep": "15",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Number of years",
+    "15"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "15",
+  "ecref": "Horizon above free-plan limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-036",
+  "bc": "BC-013",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Free-plan maximum horizon (years)",
+  "rep": "16",
+  "pos": "Above",
+  "exp": "Rejected or plan-limit message",
+  "sets": [
+   [
+    "Number of years",
+    "16"
+   ]
+  ],
+  "mode": "gate",
+  "key": "mc",
+  "bval": "15",
+  "ecref": "Horizon above free-plan limit (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-037",
+  "bc": "BC-014",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Absolute maximum horizon (years)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted (paid plan) or plan-limit message on Free",
+  "sets": [
+   [
+    "Number of years",
+    "100"
+   ]
+  ],
+  "mode": "gate",
+  "key": "mc",
+  "bval": "100",
+  "ecref": "Horizon above absolute maximum (IEC)"
+ },
+ {
+  "id": "TC-BVA-038",
+  "bc": "BC-014",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Number of years",
+  "desc": "Absolute maximum horizon (years)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Number of years",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "100",
+  "ecref": "Horizon above absolute maximum (IEC)"
+ },
+ {
+  "id": "TC-BVA-039",
+  "bc": "BC-015",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "1",
+  "ecref": "Zero starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-040",
+  "bc": "BC-015",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Starting Value",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "1",
+  "ecref": "Zero starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-041",
+  "bc": "BC-016",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Min block (years)",
+  "desc": "Minimum value of Min block (years)",
+  "rep": "0.04",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Min block",
+    "0.04"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "0.05",
+  "ecref": "Minimum block below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-042",
+  "bc": "BC-016",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Min block (years)",
+  "desc": "Minimum value of Min block (years)",
+  "rep": "0.05",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Min block",
+    "0.05"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "0.05",
+  "ecref": "Minimum block below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-043",
+  "bc": "BC-017",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Max block (years)",
+  "desc": "Maximum value of Max block (years)",
+  "rep": "20",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Max block",
+    "20"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "20",
+  "ecref": "Maximum block above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-044",
+  "bc": "BC-017",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Max block (years)",
+  "desc": "Maximum value of Max block (years)",
+  "rep": "21",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Max block",
+    "21"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "20",
+  "ecref": "Maximum block above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-045",
+  "bc": "BC-018",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Minimum random seed",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Random seed",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "mc",
+  "bval": "0",
+  "ecref": "Negative seed (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-046",
+  "bc": "BC-018",
+  "kind": "BVA",
+  "form": "MC",
+  "field": "Random seed",
+  "desc": "Minimum random seed",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Random seed",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "mc",
+  "bval": "0",
+  "ecref": "Negative seed (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-047",
+  "bc": "BC-019",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Minimum retirement horizon (years)",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "0"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw",
+  "bval": "1",
+  "ecref": "Zero horizon (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-048",
+  "bc": "BC-019",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Minimum retirement horizon (years)",
+  "rep": "2 (Phase 1 end 1)",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "2"
+   ],
+   [
+    "#7",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "1",
+  "ecref": "Zero horizon (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-049",
+  "bc": "BC-020",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Maximum retirement horizon (years)",
+  "rep": "50",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#6",
+    "50"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "50",
+  "ecref": "Horizon above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-050",
+  "bc": "BC-020",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Retirement horizon (years)",
+  "desc": "Maximum retirement horizon (years)",
+  "rep": "51",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#6",
+    "51"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw",
+  "bval": "50",
+  "ecref": "Horizon above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-051",
+  "bc": "BC-021",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "Minimum Phase 1 end year",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#7",
+    "0"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw",
+  "bval": "1",
+  "ecref": "End year zero (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-052",
+  "bc": "BC-021",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "Minimum Phase 1 end year",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#7",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "1",
+  "ecref": "End year zero (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-053",
+  "bc": "BC-022",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "Phase 1 end year must be below the horizon (horizon 30)",
+  "rep": "29",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#7",
+    "29"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "29",
+  "ecref": "End year not before horizon (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-054",
+  "bc": "BC-022",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 end year",
+  "desc": "Phase 1 end year must be below the horizon (horizon 30)",
+  "rep": "30",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#7",
+    "30"
+   ]
+  ],
+  "mode": "toast",
+  "key": "sw",
+  "bval": "29",
+  "ecref": "End year not before horizon (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-055",
+  "bc": "BC-023",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Minimum Phase 1 withdrawal rate (%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#8",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw",
+  "bval": "0",
+  "ecref": "Negative rate (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-056",
+  "bc": "BC-023",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Minimum Phase 1 withdrawal rate (%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#8",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "0",
+  "ecref": "Negative rate (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-057",
+  "bc": "BC-024",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Maximum Phase 1 withdrawal rate (%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#8",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "100",
+  "ecref": "Rate above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-058",
+  "bc": "BC-024",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 1 annual withdrawal %",
+  "desc": "Maximum Phase 1 withdrawal rate (%)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#8",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw",
+  "bval": "100",
+  "ecref": "Rate above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-059",
+  "bc": "BC-025",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Minimum Phase 2 withdrawal rate (%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw",
+  "bval": "0",
+  "ecref": "Negative rate (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-060",
+  "bc": "BC-025",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Minimum Phase 2 withdrawal rate (%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "0",
+  "ecref": "Negative rate (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-061",
+  "bc": "BC-026",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Maximum Phase 2 withdrawal rate (%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "#10",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "sw",
+  "bval": "100",
+  "ecref": "Rate above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-062",
+  "bc": "BC-026",
+  "kind": "BVA",
+  "form": "SW",
+  "field": "Phase 2 annual withdrawal %",
+  "desc": "Maximum Phase 2 withdrawal rate (%)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#10",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "sw",
+  "bval": "100",
+  "ecref": "Rate above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-063",
+  "bc": "BC-027",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Starting Value",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-064",
+  "bc": "BC-027",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Starting Value",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-065",
+  "bc": "BC-028",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Rolling Window",
+  "desc": "Minimum rolling window (months)",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Rolling Window",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero rolling window (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-066",
+  "bc": "BC-028",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Rolling Window",
+  "desc": "Minimum rolling window (months)",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Rolling Window",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero rolling window (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-067",
+  "bc": "BC-029",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Max holdings",
+  "desc": "Minimum max holdings",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max holdings",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero max holdings (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-068",
+  "bc": "BC-029",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Max holdings",
+  "desc": "Minimum max holdings",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max holdings",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "1",
+  "ecref": "Zero max holdings (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-069",
+  "bc": "BC-030",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum value of min weight (%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "0",
+  "ecref": "Negative minimum weight (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-070",
+  "bc": "BC-030",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum value of min weight (%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "0",
+  "ecref": "Negative minimum weight (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-071",
+  "bc": "BC-031",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Maximum value of min weight (%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "100",
+  "ecref": "Minimum weight above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-072",
+  "bc": "BC-031",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Min weight to include (%)",
+  "desc": "Maximum value of min weight (%)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Min weight to include",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "100",
+  "ecref": "Minimum weight above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-073",
+  "bc": "BC-032",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Max vol (%)",
+  "desc": "Minimum value of max vol (%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max vol",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "op",
+  "bval": "0",
+  "ecref": "Negative max vol (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-074",
+  "bc": "BC-032",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Max vol (%)",
+  "desc": "Minimum value of max vol (%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted (may report no feasible solution)",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ],
+   [
+    "Max vol",
+    "0"
+   ]
+  ],
+  "mode": "run_any",
+  "key": "op",
+  "bval": "0",
+  "ecref": "Negative max vol (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-075",
+  "bc": "BC-033",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Minimum number of tickers",
+  "rep": "1 ticker (SPY)",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY"
+   ]
+  ],
+  "mode": "toast",
+  "key": "op",
+  "bval": "2",
+  "ecref": "One ticker (IEC) vs two tickers (VEC)"
+ },
+ {
+  "id": "TC-BVA-076",
+  "bc": "BC-033",
+  "kind": "BVA",
+  "form": "OP",
+  "field": "Tickers",
+  "desc": "Minimum number of tickers",
+  "rep": "2 tickers (SPY AGG)",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "op",
+  "bval": "2",
+  "ecref": "One ticker (IEC) vs two tickers (VEC)"
+ },
+ {
+  "id": "TC-BVA-077",
+  "bc": "BC-034",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Minimum number of tickers",
+  "rep": "1 ticker (SPY)",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY"
+   ]
+  ],
+  "mode": "toast",
+  "key": "ef",
+  "bval": "2",
+  "ecref": "One ticker (IEC) vs two tickers (VEC)"
+ },
+ {
+  "id": "TC-BVA-078",
+  "bc": "BC-034",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Minimum number of tickers",
+  "rep": "2 tickers (SPY AGG)",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef",
+  "bval": "2",
+  "ecref": "One ticker (IEC) vs two tickers (VEC)"
+ },
+ {
+  "id": "TC-BVA-079",
+  "bc": "BC-035",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Free-plan maximum number of tickers",
+  "rep": "2 tickers (SPY AGG)",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef",
+  "bval": "2",
+  "ecref": "Three tickers on Free plan (IEC) vs two (VEC)"
+ },
+ {
+  "id": "TC-BVA-080",
+  "bc": "BC-035",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Tickers",
+  "desc": "Free-plan maximum number of tickers",
+  "rep": "3 tickers (SPY AGG GLD)",
+  "pos": "Above",
+  "exp": "Rejected or plan-limit message",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG GLD"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ef",
+  "bval": "2",
+  "ecref": "Three tickers on Free plan (IEC) vs two (VEC)"
+ },
+ {
+  "id": "TC-BVA-081",
+  "bc": "BC-036",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Max holdings",
+  "desc": "Minimum max holdings",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Max holdings",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef",
+  "bval": "1",
+  "ecref": "Zero max holdings (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-082",
+  "bc": "BC-036",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Max holdings",
+  "desc": "Minimum max holdings",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Max holdings",
+    "1"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef",
+  "bval": "1",
+  "ecref": "Zero max holdings (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-083",
+  "bc": "BC-037",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum value of min weight (%)",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "-1"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef",
+  "bval": "0",
+  "ecref": "Negative minimum weight (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-084",
+  "bc": "BC-037",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Minimum value of min weight (%)",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef",
+  "bval": "0",
+  "ecref": "Negative minimum weight (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-085",
+  "bc": "BC-038",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Maximum value of min weight (%)",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "100"
+   ]
+  ],
+  "mode": "run",
+  "key": "ef",
+  "bval": "100",
+  "ecref": "Minimum weight above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-086",
+  "bc": "BC-038",
+  "kind": "BVA",
+  "form": "EF",
+  "field": "Min weight to include (%)",
+  "desc": "Maximum value of min weight (%)",
+  "rep": "101",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Tickers",
+    "SPY AGG"
+   ],
+   [
+    "Min weight to include",
+    "101"
+   ]
+  ],
+  "mode": "native",
+  "key": "ef",
+  "bval": "100",
+  "ecref": "Minimum weight above 100 (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-087",
+  "bc": "BC-039",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Name",
+  "desc": "Maximum name length",
+  "rep": "120 chars",
+  "pos": "At",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "120",
+  "ecref": "Name longer than 120 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-088",
+  "bc": "BC-039",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Name",
+  "desc": "Maximum name length",
+  "rep": "121 chars",
+  "pos": "Above",
+  "exp": "Rejected or truncated at 120",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "120",
+  "ecref": "Name longer than 120 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-089",
+  "bc": "BC-040",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Subject",
+  "desc": "Maximum subject length",
+  "rep": "120 chars",
+  "pos": "At",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "120",
+  "ecref": "Subject longer than 120 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-090",
+  "bc": "BC-040",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Subject",
+  "desc": "Maximum subject length",
+  "rep": "121 chars",
+  "pos": "Above",
+  "exp": "Rejected or truncated at 120",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "120",
+  "ecref": "Subject longer than 120 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-091",
+  "bc": "BC-041",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Message",
+  "desc": "Maximum message length",
+  "rep": "5000 chars",
+  "pos": "At",
+  "exp": "Accepted",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "5000",
+  "ecref": "Message longer than 5000 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-092",
+  "bc": "BC-041",
+  "kind": "BVA",
+  "form": "CT",
+  "field": "Message",
+  "desc": "Maximum message length",
+  "rep": "5001 chars",
+  "pos": "Above",
+  "exp": "Rejected or truncated at 5000",
+  "sets": [],
+  "mode": "pending",
+  "key": null,
+  "bval": "5000",
+  "ecref": "Message longer than 5000 characters (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-093",
+  "bc": "BC-042",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "99",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "Starting Value",
+    "99"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld",
+  "bval": "100",
+  "ecref": "Starting value below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-094",
+  "bc": "BC-042",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "100",
+  "pos": "At",
+  "exp": "Input accepted by validation",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "Starting Value",
+    "100"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld",
+  "bval": "100",
+  "ecref": "Starting value below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-095",
+  "bc": "BC-043",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Minimum DCA horizon (months)",
+  "rep": "0",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "0"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld",
+  "bval": "1",
+  "ecref": "Horizon below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-096",
+  "bc": "BC-043",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Minimum DCA horizon (months)",
+  "rep": "1",
+  "pos": "At",
+  "exp": "Input accepted by validation",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "1"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld",
+  "bval": "1",
+  "ecref": "Horizon below minimum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-097",
+  "bc": "BC-044",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Maximum DCA horizon (months)",
+  "rep": "120",
+  "pos": "At",
+  "exp": "Input accepted by validation",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "120"
+   ]
+  ],
+  "mode": "gate",
+  "key": "ld",
+  "bval": "120",
+  "ecref": "Horizon above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-098",
+  "bc": "BC-044",
+  "kind": "BVA",
+  "form": "LD",
+  "field": "DCA horizon (months)",
+  "desc": "Maximum DCA horizon (months)",
+  "rep": "121",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "#15",
+    "SPY"
+   ],
+   [
+    "#16",
+    "60"
+   ],
+   [
+    "#17",
+    "AGG"
+   ],
+   [
+    "#18",
+    "40"
+   ],
+   [
+    "DCA horizon",
+    "121"
+   ]
+  ],
+  "mode": "native",
+  "key": "ld",
+  "bval": "120",
+  "ecref": "Horizon above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-099",
+  "bc": "BC-045",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "-1"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv",
+  "bval": "0",
+  "ecref": "Negative starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-100",
+  "bc": "BC-045",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Minimum starting value",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Starting Value",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv",
+  "bval": "0",
+  "ecref": "Negative starting value (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-101",
+  "bc": "BC-046",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Maximum starting value",
+  "rep": "5,000,000",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Starting Value",
+    "5000000"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv",
+  "bval": "5,000,000",
+  "ecref": "Starting value above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-102",
+  "bc": "BC-046",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Starting Value",
+  "desc": "Maximum starting value",
+  "rep": "5,000,001",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Starting Value",
+    "5000001"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv",
+  "bval": "5,000,000",
+  "ecref": "Starting value above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-103",
+  "bc": "BC-047",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Minimum monthly contribution",
+  "rep": "-1",
+  "pos": "Below",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Monthly contribution",
+    "-1"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv",
+  "bval": "0",
+  "ecref": "Negative contribution (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-104",
+  "bc": "BC-047",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Minimum monthly contribution",
+  "rep": "0",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Monthly contribution",
+    "0"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv",
+  "bval": "0",
+  "ecref": "Negative contribution (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-105",
+  "bc": "BC-048",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Maximum monthly contribution",
+  "rep": "100,000",
+  "pos": "At",
+  "exp": "Accepted; calculation completes",
+  "sets": [
+   [
+    "Monthly contribution",
+    "100000"
+   ]
+  ],
+  "mode": "run",
+  "key": "tv",
+  "bval": "100,000",
+  "ecref": "Contribution above maximum (IEC) vs valid (VEC)"
+ },
+ {
+  "id": "TC-BVA-106",
+  "bc": "BC-048",
+  "kind": "BVA",
+  "form": "TV",
+  "field": "Monthly contribution",
+  "desc": "Maximum monthly contribution",
+  "rep": "100,001",
+  "pos": "Above",
+  "exp": "Rejected with a validation message; no calculation is run",
+  "sets": [
+   [
+    "Monthly contribution",
+    "100001"
+   ]
+  ],
+  "mode": "toast",
+  "key": "tv",
+  "bval": "100,000",
+  "ecref": "Contribution above maximum (IEC) vs valid (VEC)"
+ }
+]

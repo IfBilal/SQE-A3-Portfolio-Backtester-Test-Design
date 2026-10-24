@@ -1,0 +1,236 @@
+TC-EP-017|3,4|RAN | toast: Backtest complete | EV $11,401.48, CAGR 13.98% | 1.00 years: 2019-12-31 - 2020-12-31
+TC-EP-018|5,6|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-019|8|REJECTED (toast) | toast: Start date must be before end date
+TC-EP-020|9|REJECTED (toast) | toast: Start date must be before end date
+TC-EP-021|10,11|RAN | toast: Backtest complete | EV $33,672.37, CAGR 7.75% | 16.26 years: 2003-09-26 - 2019-12-31
+TC-EP-022|12|REJECTED (toast) | toast: No overlapping time period found for the specified tickers and start/end dates
+TC-EP-023|13,14|RAN | toast: Backtest complete | EV $33,672.37, CAGR 7.75% | 16.26 years: 2003-09-26 - 2019-12-31
+TC-EP-024|15,16|RAN | toast: Backtest complete | EV $18,478.07, CAGR 9.45% | 6.80 years: 2019-12-31 - 2026-10-19
+TC-EP-025|17,18|RAN | toast: Backtest complete | EV $18,478.07, CAGR 9.45% | 6.80 years: 2019-12-31 - 2026-10-19
+TC-EP-026|19,20|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-027|21|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-EP-028|22|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-EP-029|23|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-EP-030|24|REJECTED (toast) | toast: Invalid starting value
+TC-EP-031|25|REJECTED (toast) | toast: Starting value is too high
+TC-EP-032|26,27|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-033|28|REJECTED (native browser validation) | Rolling Window: Value must be greater than or equal to 1.
+TC-EP-034|29|REJECTED (native browser validation) | Rolling Window: Value must be greater than or equal to 1.
+TC-EP-035|30|REJECTED (native browser validation) | Rolling Window: Please enter a valid value. The two nearest valid values are 1 and 2.
+TC-EP-036|31|REJECTED (toast) | toast: Rolling window is too large
+TC-EP-037|32,33|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-038|34|REJECTED (native browser validation) | Annual cashflow growth: Value must be greater than or equal to -99.99.
+TC-EP-039|35|REJECTED (native browser validation) | Annual cashflow growth: Value must be less than or equal to 100.
+TC-EP-040|36,37|RAN | toast: Backtest complete | EV $135,115.00, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-041|38,39|RAN | toast: Backtest complete | EV $25,772.56 (total contributions -$1,500.00), CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-042|40,41|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-043|42,43|RAN | toast: Backtest complete | EV $55,457.11, CAGR 7.71% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-044|44,45|RAN | toast: Backtest complete | EV $78,320.13, CAGR 9.33% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-045|46,47|RAN | toast: Backtest complete | EV $0.00, CAGR -75.88% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-046|48,49|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-047|50,51|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-048|52|REJECTED (toast) | toast: Invalid ticker ZZZZZZ
+TC-EP-049|53|REJECTED (toast) | toast: Portfolio 1: Non-zero allocation has empty ticker
+TC-EP-050|54|REJECTED (toast) | toast: Invalid ticker ' OR 1=1 --
+TC-EP-051|55|REJECTED (toast) | toast: Invalid ticker ÄÖÜ
+TC-EP-052|56|REJECTED (toast) | toast: Invalid ticker S PY
+TC-EP-053|57|REJECTED (toast) | toast: Invalid ticker ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ
+TC-EP-056|58|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100
+TC-EP-057|59|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100
+TC-EP-054|60,61|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-055|62,63|RAN | toast: Backtest complete | single asset SPY EV $318,820.13, CAGR 10.81% | 33.72 years: 1993-01-29 - 2026-10-19
+TC-EP-058|64,65|RAN | toast: Backtest complete | EV $15,590.61, CAGR 1.94% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-059|66,67|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-S1|68,69|RAN | toast: Backtest complete | EV $72,951.87, CAGR 7.69% | 5.00 years: 2014-12-31 - 2019-12-31
+TC-EP-S2|70|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1. ; Rolling Window: Value must be greater than or equal to 1. ; Annual cashflow growth: Value must be greater than or equal to -99.99. (all three fields invalid; browser shows the first)
+TC-EP-S3|71|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100 (unknown-ticker error not reported)
+TC-EP-S4|72|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100 / Invalid starting value / Start date must be before end date (unknown-ticker error not reported)
+TC-EP-S5|73,74|RAN | toast: Backtest complete | EV $55,329.87, CAGR 2.05% | 5.00 years: 2014-12-31 - 2019-12-31
+TC-EP-S6|75|REJECTED (toast) | toast: Portfolio 1: Non-zero allocation has empty ticker (drag 150 not reported)
+TC-BVA-003|76|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-BVA-004|77,78|RAN | toast: Backtest complete | EV $6.22, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-005|79,80|RAN | toast: Backtest complete | EV $12.44, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-007|83,84|RAN | toast: Backtest complete | EV $6,222,004,217,219.58, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-008|85|REJECTED (toast) | toast: Starting value is too high
+NOTE|81,82|(superseded: first attempt with typo value 999,999,998 returned transient toast "Backtest failed"; repeat run OK EV $6,222,004,204.78 -> intermittent server failure observation)
+TC-BVA-006|86,87|RAN | toast: Backtest complete | EV $6,222,004,217,213.32, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-009|88|REJECTED (native browser validation) | Rolling Window: Value must be greater than or equal to 1.
+TC-BVA-010|89,90|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-011|91,92|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-012|93,94|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-013|95,96|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-014|97|REJECTED (toast) | toast: Rolling window is too large
+TC-BVA-015|98|REJECTED (native browser validation) | Annual cashflow growth: Value must be greater than or equal to -99.99.
+TC-BVA-016|99,100|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-017|101,102|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-018|103,104|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-019|105,106|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-020|107|REJECTED (native browser validation) | Annual cashflow growth: Value must be less than or equal to 100.
+TC-BVA-021|109|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100
+TC-BVA-022|110,111|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-023|112|REJECTED (toast) | toast: Portfolio 1: Allocation percentages must sum to 100
+TC-BVA-024|113|REJECTED (toast) | toast: Start date must be before end date
+TC-BVA-025|114|REJECTED (toast) | toast: Start date must be before end date
+TC-BVA-026|115,116|RAN | toast: Backtest complete | EV $10,067.15, CAGR 239.45% | 0.01 years: 2019-12-31 - 2020-01-02
+TC-BVA-027|117,118|RAN | toast: Backtest complete | EV $78,320.13, CAGR 9.33% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-028|119,120|RAN | toast: Backtest complete | EV $62,220.04, CAGR 8.25% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-029|121,122|RAN | toast: Backtest complete | EV $49,429.16, CAGR 7.17% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-030|124,123|RAN | toast: Backtest complete | EV $0.00, CAGR -59.77% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-031|125,126|RAN | toast: Backtest complete | EV $0.00, CAGR -60.17% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-BVA-032|127,128|RAN | toast: Backtest complete | EV $0.00, CAGR -60.57% | 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-060|129,130|RAN | | 500 simulations of 15 years
+TC-EP-061|131|REJECTED (toast) | toast: Start date must be before end date
+TC-EP-062|132,133|RAN | | 500 simulations of 10 years
+TC-EP-063|134|REJECTED (native browser validation) | Number of years: Value must be greater than or equal to 1. | toast: Number of years must be positive
+TC-EP-064|135,136|PLAN-LIMIT DIALOG | "Upgrade for higher Monte Carlo limits - Free supports up to 15 years and 500 simulations" (years 50)
+TC-EP-065|137|REJECTED (native browser validation) | Number of years: Value must be less than or equal to 100. | toast: Number of years must be <= 100
+TC-EP-066|138,139|RAN | | 500 simulations of 2.5 years
+TC-EP-067|140,141|RAN | | 500 simulations of 15 years
+TC-EP-068|142|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1. | toast: Starting value must be positive
+TC-EP-069|143,144|RAN | | 500 simulations of 15 years
+TC-EP-070|150|RAN (DEFECT: browser reports min 0.05 but app accepts 0.01) | Min block 0.01 -> "Ran 500 simulations in 2.7 seconds", random seed auto-filled 1275341795
+TC-EP-071|146,147|RAN | | 500 simulations of 15 years
+TC-EP-072|148|REJECTED (native browser validation + toast) | Max block (in years): Value must be less than or equal to 20. | toast: Max block length must be <= 20 years
+TC-EP-073|149|REJECTED (native browser validation + toast) | Max block (in years): Value must be greater than or equal to 0.05. | toast: Min block length must be <= max block length
+TC-EP-074|151,152|RAN | | 500 simulations of 15 years
+TC-EP-075|153,154|RAN | | 500 simulations of 15 years (seed 42)
+TC-EP-076|155,156|RAN (silent correction: seed -1 reset to 0) | Random seed field shows 0 after click; "Ran 500 simulations in 0.9 seconds"; no message
+TC-EP-077|157,158|RAN (silent correction: seed 1.5 rounded to 2) | Random seed field shows 2; "Ran 500 simulations in 1.0 seconds"; no message
+TC-EP-078|159,160|RAN | | 500 simulations of 15 years
+TC-EP-079|161|REJECTED (toast) | toast: Portfolio allocations must sum to 100 (total box 95 in red)
+TC-BVA-033|162|REJECTED (native browser validation + toast) | Number of years: Value must be greater than or equal to 1. | toast: Number of years must be positive
+TC-BVA-034|163,164|RAN | | 500 simulations of 1 years
+TC-BVA-035|165,166|RAN | | 500 simulations of 15 years
+TC-BVA-036|167,168|PLAN-LIMIT DIALOG | "Upgrade for higher Monte Carlo limits - Free supports up to 15 years and 500 simulations" (years 16)
+TC-BVA-037|169,170|PLAN-LIMIT DIALOG | "Upgrade for higher Monte Carlo limits - Free supports up to 15 years and 500 simulations" (years 100)
+TC-BVA-038|171|REJECTED (native browser validation + toast) | Number of years: Value must be less than or equal to 100. | toast: Number of years must be <= 100
+TC-BVA-039|172|REJECTED (native browser validation + toast) | Starting Value: Value must be greater than or equal to 1. | toast: Starting value must be positive
+TC-BVA-040|173,174|RAN | | 500 simulations of 15 years (starting value 1)
+TC-BVA-041|175|RAN (DEFECT: browser reports min 0.05 but app accepts 0.04) | Min block 0.04 -> "Ran 500 simulations in 0.8 seconds", random seed auto-filled 85952096
+TC-BVA-042|176,177|RAN | | 500 simulations of 15 years
+TC-BVA-043|178,179|RAN | | 500 simulations of 15 years (max block 20)
+TC-BVA-044|180|REJECTED (native browser validation + toast) | Max block (in years): Value must be less than or equal to 20. | toast: Max block length must be <= 20 years
+TC-BVA-045|181|RAN (silent correction: seed -1 reset to 0) | Random seed field shows 0; "Ran 500 simulations in 0.7 seconds"; no message
+TC-BVA-046|186,187|RAN | | 500 simulations of 15 years (seed 0). NOTE first attempt (shots 182,183) returned transient toast "An error occurred while running Monte Carlo"; repeat OK
+TC-EP-080|184,185|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19
+TC-EP-081|188|REJECTED (toast) | toast: Retirement horizon must be greater than 0 and at most 50 years
+TC-EP-082|189|REJECTED (native browser validation + toast; field auto-clamped to 50) | Retirement horizon: Value must be less than or equal to 50. | toast: Retirement horizon must be greater than 0 and at most 50 years
+TC-EP-083|190,191|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19
+TC-EP-084|192|REJECTED (toast) | toast: Phase 1 end year must be greater than 0 and at most 50
+TC-EP-085|193|REJECTED (toast) | toast: Phase 1 cannot end after the retirement horizon
+TC-EP-086|194,195|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (Phase 1 4%)
+TC-EP-087|s2_0|REJECTED (native browser validation + toast) | Phase 1 annual withdrawal: Value must be greater than or equal to 0. | toast: Phase 1 withdrawal rate must be between 0% and 100%
+TC-EP-088|s2_1|REJECTED (native browser validation) | Phase 1 annual withdrawal: Value must be less than or equal to 100.
+TC-EP-089|s2_2,s2_3|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (Phase 2 6%)
+TC-EP-090|s2_4|REJECTED (native browser validation + toast) | Phase 2 annual withdrawal: Value must be greater than or equal to 0. | toast: Phase 2 withdrawal rate must be between 0% and 100%
+TC-EP-091|s2_5|REJECTED (native browser validation) | Phase 2 annual withdrawal: Value must be less than or equal to 100.
+TC-EP-092|s2_6,s2_7|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19
+TC-EP-093|s2_8|REJECTED (toast) | toast: Invalid request: Value error, Start date must be before end date
+TC-EP-094|s2_9,s2_10|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19
+TC-EP-095|s2_11|REJECTED (toast) | toast: Portfolio 1 weights must add up to 100%
+TC-EP-096|s2_12,s2_13|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (SPY 58.56%, AGG 0%, GLD 41.44%)
+TC-EP-097|s2_14,s2_15|RAN | toast: Backtest optimization complete | 23.06 years: 2003-09-26 - 2026-10-19 (SPY 100%, AGG 0%)
+TC-EP-098|s2_16|REJECTED (toast) | toast: You must specify at least two tickers
+TC-EP-099|s2_17|REJECTED (toast) | toast: You must specify at least two tickers
+TC-EP-100|s2_18|REJECTED (toast) | toast: Invalid ticker ZZZZZZ
+TC-EP-101|s2_19|REJECTED (toast) | toast: You must specify at least two tickers (comma delimiter not recognised)
+TC-EP-102|s2_20,s2_21|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-103|s2_22|REJECTED (toast) | toast: End date must be after start date
+TC-EP-104|s2_23,s2_24|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-105|s2_25|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-EP-106|s2_26,s2_27|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-107|s2_28|REJECTED (native browser validation) | Rolling Window: Value must be greater than or equal to 1.
+TC-EP-108|s2_29,s2_30|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-109|s2_31|REJECTED (native browser validation) | Max holdings: Value must be greater than or equal to 1.
+TC-EP-110|s2_32,s2_33|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-111|s2_34|REJECTED (native browser validation) | Min weight to include: Value must be greater than or equal to 0.
+TC-EP-112|s2_35|REJECTED (native browser validation) | Min weight to include: Value must be less than or equal to 100.
+TC-EP-113|s2_36,s2_37|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19
+TC-EP-114|s2_38|REJECTED (native browser validation) | Max vol: Value must be greater than or equal to 0.
+TC-EP-115|s2_39,s2_40|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (SPY 39.49% / AGG 60.51%)
+TC-EP-116|s2_41|REJECTED (toast) | toast: You must specify at least two tickers
+TC-EP-117|s2_42|REJECTED (toast) | toast: You must specify at least two tickers
+TC-EP-118|s2_43,s2_44|PLAN-LIMIT PAGE | Redirected to /pricing (reason=limit, tool=efficient_frontier, limit=max_efficient_frontier_tickers): "You've hit the max tickers limit ... Your current limit is 2 tickers"
+TC-EP-119|s2_45,s2_46|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19
+TC-EP-120|s2_47|REJECTED (toast) | toast: End date must be after start date
+TC-EP-121|s2_48,s2_49|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (max holdings 2)
+TC-EP-122|s2_50|REJECTED (native browser validation) | Max holdings: Value must be greater than or equal to 1.
+TC-EP-123|s2_51,s2_52|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (min weight 10)
+TC-EP-124|s2_53|REJECTED (native browser validation) | Min weight to include: Value must be greater than or equal to 0.
+TC-EP-125|s2_54|REJECTED (native browser validation) | Min weight to include: Value must be less than or equal to 100.
+TC-EP-147|s2_55,s2_56|RAN | | sampled 1805 feasible solutions (charts shown)
+TC-EP-148|s2_57|REJECTED (toast) | toast: Starting Value must be between $0 and $5,000,000.
+TC-EP-149|s2_58|REJECTED (toast) | toast: Starting Value must be between $0 and $5,000,000.
+TC-EP-150|s2_59|REJECTED (toast) | toast: Starting Value must be between $0 and $5,000,000.
+TC-EP-151|s2_60,s2_61|RAN | | sampled 1805 feasible solutions (charts shown)
+TC-EP-152|s2_62|REJECTED (toast) | toast: Contribution must be between $0 and $100,000.
+TC-EP-153|s2_63|REJECTED (toast) | toast: Contribution must be between $0 and $100,000.
+TC-BVA-099|s2_64|REJECTED (toast) | toast: Starting Value must be between $0 and $5,000,000.
+TC-BVA-100|s2_65,s2_66|RAN | | sampled 1805 feasible solutions (starting value 0)
+TC-BVA-101|s2_67,s2_68|RAN | | sampled 1805 feasible solutions (starting value 5,000,000)
+TC-BVA-102|s2_69|REJECTED (toast) | toast: Starting Value must be between $0 and $5,000,000.
+TC-BVA-103|s2_70|REJECTED (toast) | toast: Contribution must be between $0 and $100,000.
+TC-BVA-104|s2_71,s2_72|RAN | | sampled 1805 feasible solutions (contribution 0)
+TC-BVA-105|s2_73,s2_74|RAN | | sampled 1805 feasible solutions (contribution 100,000)
+TC-BVA-106|s2_75|REJECTED (toast) | toast: Contribution must be between $0 and $100,000.
+TC-EP-138|s2_76,s2_77|PLAN-LIMIT PAGE (premium tool) | After clicking Analyze with valid inputs: redirected to /pricing?reason=premium_tool&tool=lumpsum_dca_sensitivity: "Premium tool - Lump Sum vs DCA: Requires Pro or higher."
+TC-EP-139|s2_79,s2_80|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to /pricing?reason=premium_tool) | Starting Value: Value must be greater than or equal to 100. (bubble via field validation); click -> premium-tool pricing page
+TC-EP-140|s2_81,s2_82|PLAN-LIMIT PAGE (premium tool) | Valid horizon 12 -> Analyze redirects to /pricing?reason=premium_tool&tool=lumpsum_dca_sensitivity ("Requires Pro or higher")
+TC-EP-141|s2_83,s2_84|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to pricing) | DCA horizon (months): Value must be greater than or equal to 1.
+TC-EP-142|s2_85,s2_86|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to pricing) | DCA horizon (months): Value must be less than or equal to 120.
+TC-EP-143|s2_87,s2_88|PLAN-LIMIT PAGE (premium tool) | Valid ticker SPY -> Analyze redirects to /pricing?reason=premium_tool&tool=lumpsum_dca_sensitivity
+TC-EP-144|s2_89,s2_90|BLOCKED (premium gate before validation) | Unknown ticker ZZZZZZ -> Analyze redirects to /pricing (no "Invalid ticker" message shown)
+TC-EP-146|s2_91,s2_92|BLOCKED (premium gate before validation) | Allocation total 90 (box turns red) -> Analyze redirects to /pricing (no allocation message shown)
+TC-EP-145|s2_93,s2_94|PLAN-LIMIT PAGE (premium tool) | Allocation total 100 (60/40) -> Analyze redirects to /pricing?reason=premium_tool&tool=lumpsum_dca_sensitivity
+TC-BVA-093|s2_95,s2_96|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to pricing) | Starting Value: Value must be greater than or equal to 100.
+TC-BVA-094|s2_97,s2_98|PLAN-LIMIT PAGE (premium tool) | Starting Value 100 accepted by validation; Analyze redirects to /pricing (premium_tool)
+TC-BVA-095|s2_99,s2_100|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to pricing) | DCA horizon (months): Value must be greater than or equal to 1.
+TC-BVA-096|s2_101,s2_102|PLAN-LIMIT PAGE (premium tool) | DCA horizon 1 accepted by validation; Analyze redirects to /pricing (premium_tool)
+TC-BVA-097|s2_103,s2_104|PLAN-LIMIT PAGE (premium tool) | DCA horizon 120 accepted by validation; Analyze redirects to /pricing (premium_tool)
+TC-BVA-098|s2_105,s2_106|BLOCKED (browser validation message shown for the field, but clicking Analyze redirects to pricing) | DCA horizon (months): Value must be less than or equal to 120.
+TC-EP-154|s2_107,s2_108|PLAN-LIMIT PAGE (premium tool) | Valid inputs, dates empty -> Analyze redirects to /pricing?reason=premium_tool&tool=rebalancing_sensitivity ("Rebalancing Sensitivity: Requires Pro or higher")
+TC-EP-155|s2_109,s2_110|BLOCKED (premium gate before validation) | Start 01/01/2020 after End 01/01/2019 -> Analyze redirects to /pricing (no date message shown)
+TC-EP-156|s2_111,s2_112|PLAN-LIMIT PAGE (premium tool) | Valid drag 0.5 -> Analyze redirects to /pricing?reason=premium_tool&tool=rebalancing_sensitivity
+TC-EP-157|s2_113,s2_114|BLOCKED (premium gate before validation) | Negative drag -2 -> Analyze redirects to /pricing (no drag message shown)
+TC-EP-158|s2_115,s2_116|PLAN-LIMIT PAGE (premium tool) | Allocation total 100 -> Analyze redirects to /pricing (premium_tool)
+TC-EP-159|s2_117,s2_118|BLOCKED (premium gate before validation) | Allocation total 90 (box turns red) -> Analyze redirects to /pricing (no allocation message shown)
+TC-BVA-047|s2_119|REJECTED (toast) | toast: Retirement horizon must be greater than 0 and at most 50 years
+TC-BVA-048|s2_120,s2_121|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (horizon 2, phase 1 end 1)
+TC-BVA-049|s2_122,s2_123|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (horizon 50)
+TC-BVA-050|s2_124|REJECTED (native browser validation + toast) | Retirement horizon: Value must be less than or equal to 50. | toast: Retirement horizon must be greater than 0 and at most 50 years
+TC-BVA-051|s2_125|REJECTED (toast) | toast: Phase 1 end year must be greater than 0 and at most 50
+TC-BVA-052|s2_126,s2_127|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 1 end 1)
+TC-BVA-053|s2_128,s2_129|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 1 end 29)
+TC-BVA-054|s2_130|REJECTED (toast) | toast: Phase 2 must end after the previous phase (phase 1 end = 30 = horizon)
+TC-BVA-055|s2_131|REJECTED (native browser validation + toast) | Phase 1 annual withdrawal: Value must be greater than or equal to 0. | toast: Phase 1 withdrawal rate must be between 0% and 100%
+TC-BVA-056|s2_132,s2_133|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 1 withdrawal 0%)
+TC-BVA-057|s2_134,s2_135|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 1 withdrawal 100%; survival 0.00%)
+TC-BVA-058|s2_136|REJECTED (native browser validation + toast) | Phase 1 annual withdrawal: Value must be less than or equal to 100. | toast: Phase 1 withdrawal rate must be between 0% and 100%
+TC-BVA-059|s2_137|REJECTED (native browser validation + toast) | Phase 2 annual withdrawal: Value must be greater than or equal to 0. | toast: Phase 2 withdrawal rate must be between 0% and 100%
+TC-BVA-060|s2_138,s2_139|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 2 withdrawal 0%)
+TC-BVA-061|s2_140,s2_141|RAN | toast: Withdrawal policy analysis complete | 58.55 years: 1968-04-01 - 2026-10-19 (phase 2 withdrawal 100%; survival 0.00%)
+TC-BVA-062|s2_142|REJECTED (native browser validation) | Phase 2 annual withdrawal: Value must be less than or equal to 100. (no run; results area unchanged)
+TC-BVA-063|s2_143|REJECTED (native browser validation) | Starting Value: Value must be greater than or equal to 1.
+TC-BVA-064|s2_144,s2_145|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (starting value 1)
+TC-BVA-065|s2_146|REJECTED (native browser validation) | Rolling Window: Value must be greater than or equal to 1.
+TC-BVA-066|s2_147,s2_148|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (rolling window 1)
+TC-BVA-067|s2_149|REJECTED (native browser validation) | Max holdings: Value must be greater than or equal to 1.
+TC-BVA-068|s2_150,s2_151|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (max holdings 1: SPY 100%)
+TC-BVA-069|s2_152|REJECTED (native browser validation) | Min weight to include: Value must be greater than or equal to 0.
+TC-BVA-070|s2_153,s2_154|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (min weight 0)
+TC-BVA-071|s2_155,s2_156|RAN | toast: Backtest optimization complete | 21.92 years: 2004-11-18 - 2026-10-19 (min weight 100: SPY 100%)
+TC-BVA-072|s2_157|REJECTED (native browser validation) | Min weight to include: Value must be less than or equal to 100.
+TC-BVA-073|s2_158|REJECTED (native browser validation) | Max vol: Value must be greater than or equal to 0.
+TC-BVA-074|s2_159,s2_160|ACCEPTED (no validation error); optimizer reports no feasible solution | toast: Optimization failed. Try relaxing constraints. (max vol 0)
+TC-BVA-075|s2_161|REJECTED (toast) | toast: You must specify at least two tickers
+TC-BVA-076|s2_162,s2_163|RAN | toast: Backtest optimization complete | 23.06 years: 2003-09-26 - 2026-10-19 (two tickers SPY AGG)
+TC-BVA-077|s2_164|REJECTED (toast) | toast: You must specify at least two tickers
+TC-BVA-078|s2_165,s2_166|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (2 tickers)
+TC-BVA-079|s2_167,s2_168|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (2 tickers = free-plan maximum)
+TC-BVA-080|s2_169,s2_170|PLAN-LIMIT PAGE | 3 tickers -> redirected to /pricing?reason=limit&tool=efficient_frontier&limit=max_efficient_frontier_tickers ("You've hit the max tickers limit ... current limit is 2 tickers")
+TC-BVA-081|s2_171|REJECTED (native browser validation) | Max holdings: Value must be greater than or equal to 1.
+TC-BVA-082|s2_172,s2_173|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (max holdings 1: SPY 100%)
+TC-BVA-083|s2_174|REJECTED (native browser validation) | Min weight to include: Value must be greater than or equal to 0.
+TC-BVA-084|s2_175,s2_176|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (min weight 0)
+TC-BVA-085|s2_177,s2_178|RAN | | Efficient frontier computed 23.06 years: 2003-09-26 - 2026-10-19 (min weight 100: SPY 100%)
+TC-BVA-086|s2_179|REJECTED (native browser validation) | Min weight to include: Value must be less than or equal to 100.
